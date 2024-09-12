@@ -1,0 +1,82 @@
+{
+	"personal-details": {
+		"name": "VGFtw6FzIE5hZ3k=",
+		"country": "Hungary",
+		"title": "Senior Software Engineer"
+	},
+	"profile-picture-alt": "Profile picture",
+	"theme": {
+		"light": "Light",
+		"dark": "Dark",
+		"system": "System"
+	},
+	"content": {
+		"tabs": {
+			"work": "Work experience",
+			"education": "Education",
+			"personal": "Personal"
+		},
+		"personal": {
+			"language-other": {
+				"title": "Languages and other skills",
+				"language": "English, advanced language exam",
+				"licence": "B category driving licence"
+			},
+			"hobby": {
+				"title": "Hobbies",
+				"reading": "reading",
+				"hiking": "taking trips outdoors",
+				"running": "running"
+			},
+			"education": {
+				"secondary-school": {
+					"name": "Varga Katalin Secondary School",
+					"course": "Hungarian - English bilingual class"
+				},
+				"university": {
+					"name": "University of Óbuda",
+					"faculty": "John von Neumann Faculty of Informatics",
+					"course": "Computer Engineering BSc, Embedded systems and mobile informatics specialization"
+				}
+			}
+		},
+		"work": {
+			"miradore": {
+				"name": "Miradore (GoTo)",
+				"title-date": "Senior Software Engineer | 07.2023 - ",
+				"description": "Developing and maintaining portal and tools built around MDM management."
+			},
+			"betsson": {
+				"name": "Betsson Group",
+				"title-date": "Software Engineer | 04.2022 - 06.2023",
+				"description": "Development and maintenance of B2B and integration platform towards partners."
+			},
+			"startistica": {
+				"name": "Startistica LTD.",
+				"title-date": "Software Engineer | 09.2021 - 03.2022",
+				"description": "Speech recognition engine migration to cloud and built platform around it."
+			},
+			"atos": {
+				"name": "Atos Consulting",
+				"title-date": "Junior Software Engineer | 03.2020 - 08.2021",
+				"title-date-2": "Internship | 10.2019 - 02.2020",
+				"description": "Participated in the development of an inventory portal (web application in ASP.NET MVC. Participated in the preparation of re-writing the mentioned application in Angular and ASP.NET Core Web API."
+			},
+			"itron": {
+				"name": "Itron Labs",
+				"title-date": "Internship | 07.2019 - 09. 2019",
+				"description": "Participate in developing a platform in .NET Core with the usage of Docker and Kubernetes."
+			},
+			"morgan": {
+				"name": "Morgan Stanley Budapest",
+				"title-date": "Internship | 06.2018 - 05.2019",
+				"description": "Developed backend for web applications in C# , on .NET framework (WCF) and developed components, wrote tests, code refactoring. Occasionally wrote Python and Javascript codes to supplement existing components."
+			},
+			"ottawa": {
+				"name": "Eagle Ottawa Hungary",
+				"title-date": "Student work | 01.2016 - 07.2016",
+				"description": "Made quality assurance reports in Microsoft Excel and Word. Supported administrative works."
+			}
+		}
+	}
+}

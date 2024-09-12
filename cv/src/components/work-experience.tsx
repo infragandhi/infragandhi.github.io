@@ -7,7 +7,7 @@ function WorkExperience() {
 	const [t] = useTranslation();
 
 	return (
-		<div className="grid grid-cols-1 laptop:grid-cols-3 gap-16 mt-8">
+		<div className="grid grid-cols-1 laptop:grid-cols-3 gap-x-16 gap-y-8 mt-8">
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.miradore.name')}

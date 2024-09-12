@@ -7,7 +7,7 @@ function Container() {
 	return (
 		<div className="grid grid-cols-1 laptop:desktop:grid-cols-[20%_80%] h-dvh">
 			<div className="grid grid-cols-subgrid grid-cols-1">
-				<div className="bg-lime-200 dark:bg-teal-800">
+				<div className="bg-gradient-to-b laptop:bg-gradient-to-r from-amber-600 via-orange-200 to-white dark:from-teal-800 dark:slate-700">
 					<div className="flex flex-row">
 						<ThemeToggle />
 						<div className="ml-4">

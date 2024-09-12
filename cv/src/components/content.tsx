@@ -9,11 +9,17 @@ function Content() {
 
 	return (
 		<div className="laptop:mt-12 mobile:mt-12 laptop:ml-12 mobile:ml-2">
-			<Tabs defaultValue="work" className="laptop:w-[400px] mobile:w-[360px] desktop:w-[1000px]">
-				<TabsList>
-					<TabsTrigger value="work">{t('content.tabs.work')}</TabsTrigger>
-					<TabsTrigger value="education">{t('content.tabs.education')}</TabsTrigger>
-					<TabsTrigger value="personal">{t('content.tabs.personal')}</TabsTrigger>
+			<Tabs defaultValue="work" className="w-[360px] laptop:w-[500px] desktop:w-[1000px]">
+				<TabsList className="bg-slate-400 dark:bg-slate-600">
+					<TabsTrigger className="text-white font-medium" value="work">
+						{t('content.tabs.work')}
+					</TabsTrigger>
+					<TabsTrigger className="text-white font-medium" value="education">
+						{t('content.tabs.education')}
+					</TabsTrigger>
+					<TabsTrigger className="text-white font-medium" value="personal">
+						{t('content.tabs.personal')}
+					</TabsTrigger>
 				</TabsList>
 				<TabsContent value="work">
 					<WorkExperience />

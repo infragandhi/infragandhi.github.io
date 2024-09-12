@@ -23,7 +23,7 @@ function Education() {
 					<p className="mt-4">2010-2014</p>
 				</article>
 			</div>
-			<div className='mb-12'/>
+			<div className="mb-12" />
 		</>
 	);
 }

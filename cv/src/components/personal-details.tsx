@@ -20,14 +20,17 @@ function PersonalDetails() {
 
 	const getMailTo = (): string => {
 		return `mailto:${decodeString('bnRhbWFzOTUwM0BnbWFpbC5jb20=')}`;
-	}
+	};
 
 	return (
 		<div className="grid grid-cols-1 grid-rows-5 gap-y-1">
 			<p className="text-2xl font-bold">{decodeString(t('personal-details.name'))}</p>
 			<p className="text-lg font-semibold">{t('personal-details.title')}</p>
 			<p className="text-lg font-medium">
-				<a className='text-blue-600 dark:text-blue-300 hover:underline' href={getMailTo()}>{decodeString('bnRhbWFzOTUwM0BnbWFpbC5jb20=')}</a> | {t('personal-details.country')}
+				<a className="text-blue-600 dark:text-blue-300 hover:underline" href={getMailTo()}>
+					{decodeString('bnRhbWFzOTUwM0BnbWFpbC5jb20=')}
+				</a>{' '}
+				| {t('personal-details.country')}
 			</p>
 			<Button
 				className="bg-blue-600 dark:bg-blue-600 hover:bg-blue-300 hover:dark:hover:bg-blue-300 cursor-pointer laptop:mt-4 qhd:mt-2"

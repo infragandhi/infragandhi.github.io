@@ -24,7 +24,7 @@ function Personal() {
 					<li>{t('content.personal.hobby.hiking')}</li>
 				</ul>
 			</div>
-			<div className='mb-12'/>
+			<div className="mb-12" />
 		</>
 	);
 }

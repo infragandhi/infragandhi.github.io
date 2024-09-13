@@ -1,4 +1,4 @@
-import { Separator } from '@/components/ui/separator';
+import { AlternateSeparator } from '@/components/ui/alternate-separator';
 import { useTranslation } from 'react-i18next';
 
 function Personal() {
@@ -14,7 +14,7 @@ function Personal() {
 				</ul>
 			</div>
 			<br />
-			<Separator className="bg-black dark:bg-white" orientation="horizontal" />
+			<AlternateSeparator className="bg-black dark:bg-white" />
 			<br />
 			<div>
 				<h3 className="text-lg font-bold text-xl">{t('content.personal.hobby.title')}</h3>

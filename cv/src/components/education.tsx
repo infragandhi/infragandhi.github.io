@@ -1,4 +1,4 @@
-import { Separator } from '@/components/ui/separator';
+import { AlternateSeparator } from '@/components/ui/alternate-separator';
 import { useTranslation } from 'react-i18next';
 
 function Education() {
@@ -14,7 +14,7 @@ function Education() {
 				</article>
 			</div>
 			<br />
-			<Separator className="bg-black dark:bg-white" orientation="horizontal" />
+			<AlternateSeparator className="bg-black dark:bg-white" />
 			<br />
 			<div>
 				<article className="text-wrap">

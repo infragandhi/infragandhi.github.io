@@ -8,8 +8,8 @@ function Content() {
 	const [t] = useTranslation();
 
 	return (
-		<div className="laptop:mt-12 mobile:mt-12 laptop:ml-12 mobile:ml-2">
-			<Tabs defaultValue="work" className="w-[360px] laptop:w-[500px] desktop:w-[1000px]">
+		<div className="mt-12 ml-2 laptop:ml-32 desktop:ml-16">
+			<Tabs defaultValue="work" className="w-[360px] laptop:w-[900px] desktop:w-[1400px]">
 				<TabsList className="bg-slate-400 dark:bg-slate-600">
 					<TabsTrigger className="text-white font-medium" value="work">
 						{t('content.tabs.work')}

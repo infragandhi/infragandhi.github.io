@@ -11,7 +11,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.miradore.name')}
-					status={t('content.work.miradore.title-date')}
+					status={t('content.work.miradore.title')}
+					range={t('content.work.miradore.range')}
 					description={t('content.work.miradore.description')}
 				/>
 				<br />
@@ -26,7 +27,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.betsson.name')}
-					status={t('content.work.betsson.title-date')}
+					status={t('content.work.betsson.title')}
+					range={t('content.work.betsson.range')}
 					description={t('content.work.betsson.description')}
 				/>
 				<br />
@@ -41,7 +43,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.startistica.name')}
-					status={t('content.work.startistica.title-date')}
+					status={t('content.work.startistica.title')}
+					range={t('content.work.startistica.range')}
 					description={t('content.work.startistica.description')}
 				/>
 				<br />
@@ -56,8 +59,10 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.atos.name')}
-					status={t('content.work.atos.title-date')}
-					status2={t('content.work.atos.title-date-2')}
+					status={t('content.work.atos.title')}
+					range={t('content.work.atos.range')}
+					status2={t('content.work.atos.title-2')}
+					range2={t('content.work.atos.range-2')}
 					description={t('content.work.atos.description')}
 				/>
 				<br />
@@ -73,7 +78,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.itron.name')}
-					status={t('content.work.itron.title-date')}
+					status={t('content.work.itron.title')}
+					range={t('content.work.itron.range')}
 					description={t('content.work.itron.description')}
 				/>
 				<br />
@@ -88,7 +94,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.morgan.name')}
-					status={t('content.work.morgan.title-date')}
+					status={t('content.work.morgan.title')}
+					range={t('content.work.morgan.range')}
 					description={t('content.work.morgan.description')}
 				/>
 				<br />
@@ -103,7 +110,8 @@ function WorkExperience() {
 			<div>
 				<WorkExperienceItem
 					company={t('content.work.ottawa.name')}
-					status={t('content.work.ottawa.title-date')}
+					status={t('content.work.ottawa.title')}
+					range={t('content.work.ottawa.range')}
 					description={t('content.work.ottawa.description')}
 				/>
 				<br />

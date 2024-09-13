@@ -53,8 +53,8 @@ export default {
 			},
 			screens: {
 				mobile: '320px',
-				laptop: '768px',
-				desktop: '1080px',
+				laptop: '1366px',
+				desktop: '1920px',
 				qhd: '2400px',
 			},
 		},

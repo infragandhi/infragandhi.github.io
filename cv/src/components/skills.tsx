@@ -2,7 +2,7 @@ import SkillBadge from './skillbadge';
 
 function Skills() {
 	return (
-		<div className="grid grid-cols-6 grid-rows-5 gap-2 w-72 mobile:ml-8">
+		<div className="grid grid-cols-6 grid-rows-5 gap-2 w-72 ml-4">
 			<div className="col-start-1 row-start-1 col-span-2">
 				<SkillBadge skill={'dotnet'} />
 			</div>
@@ -33,7 +33,7 @@ function Skills() {
 			<div className="col-start-1 row-start-4 col-span-3">
 				<SkillBadge skill={'SQL Server'} />
 			</div>
-			<div className="col-start-4 row-start-4 col-span-3 ml-4">
+			<div className="col-start-4 row-start-4 col-span-3 ml-2">
 				<SkillBadge skill={'Powershell'} />
 			</div>
 		</div>

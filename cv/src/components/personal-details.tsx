@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { decode as decode64 } from 'base-64';
 import { decode as decodeUtf8 } from 'utf8';
 import { useTranslation } from 'react-i18next';
@@ -11,11 +12,6 @@ function PersonalDetails() {
 	const decodeString = (toDecode: string): string => {
 		const bytes = decode64(toDecode);
 		return decodeUtf8(bytes);
-	};
-
-	const navigateToLinkedIn = () => {
-		const url = decodeString('aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vbmFneXRvbWk=');
-		window.open(url, '_blank');
 	};
 
 	const getMailTo = (): string => {
@@ -32,13 +28,14 @@ function PersonalDetails() {
 				</a>{' '}
 				| {t('personal-details.country')}
 			</p>
-			<Button
-				className="bg-blue-600 dark:bg-blue-600 hover:bg-blue-300 hover:dark:hover:bg-blue-300 cursor-pointer laptop:mt-4 qhd:mt-2"
-				asChild
-				size="icon"
-				onClick={navigateToLinkedIn}>
-				<FontAwesomeIcon icon={faLinkedin} />
-			</Button>
+			<Link to={decodeString('aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vbmFneXRvbWk=')} target="_blank" rel="noopener noreferrer">
+				<Button
+					className="bg-blue-600 dark:bg-blue-600 hover:bg-blue-400 hover:dark:hover:bg-blue-300 cursor-pointer laptop:mt-4 qhd:mt-2"
+					asChild
+					size="icon">
+					<FontAwesomeIcon icon={faLinkedin} />
+				</Button>
+			</Link>
 		</div>
 	);
 }

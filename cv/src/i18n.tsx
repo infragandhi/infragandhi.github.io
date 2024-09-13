@@ -14,7 +14,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
 	resources,
-	lng: 'en',
+	lng: (localStorage.getItem('nt-cv-language') as string) || 'en',
 	fallbackLng: 'en',
 });
 

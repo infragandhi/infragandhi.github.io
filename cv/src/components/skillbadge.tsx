@@ -5,7 +5,11 @@ interface SkillBadgeProps {
 }
 
 function SkillBadge({ skill }: SkillBadgeProps) {
-	return <Badge className="bg-sky-500 dark:bg-amber-300 text-base">{skill}</Badge>;
+	return (
+		<Badge className="bg-gradient-to-b from-cyan-400 to-sky-400 dark:from-red-900 dark:to-rose-800 text-base text-black dark:text-white">
+			{skill}
+		</Badge>
+	);
 }
 
 export default SkillBadge;

@@ -43,38 +43,46 @@
 		"work": {
 			"miradore": {
 				"name": "Miradore (GoTo)",
-				"title-date": "Szenior szofvermérnök | 2023.07 - ",
+				"title": "Szenior szofvermérnök",
+				"range": "2023.07 -",
 				"description": "MDM menedzsment köré épült portál és hozzátartozó eszközök fejlesztése."
 			},
 			"betsson": {
 				"name": "Betsson Group",
-				"title-date": "Szoftvermérnök | 2022.04 - 2023.06",
+				"title": "Szoftvermérnök",
+				"range": "2022.04 - 2023.06",
 				"description": "Partnerek felé irányuló B2B és integrációs platform fejlesztése és karbantartása."
 			},
 			"startistica": {
 				"name": "Startistica LTD.",
-				"title-date": "Szoftvermérnök | 2021.09 - 2022.03",
+				"title": "Szoftvermérnök",
+				"range": "2021.09 - 2022.03",
 				"description": "Beszédfelismerés motor (speech recognition engine) felhőbe ültetése és platform kiépítése."
 			},
 			"atos": {
 				"name": "Atos Consulting",
-				"title-date": "Junior szoftvermérnök | 2020.03 - 2021.08",
-				"title-date-2": "Gyakornok | 2019.10 - 2020.02",
-				"description": "Webportál fejlesztése ASP.NET MVC 5 alapon, MS SQL Server adatbázissal. Részvétel az előzetes tervezésen, ahol az említett webportál újraírása került előtérbe, Angular és ASP.NET Core Web API alapokon."
+				"title": "Junior szoftvermérnök",
+				"range": "2020.03 - 2021.08",
+				"title-2": "Gyakornok",
+				"range-2": "2019.10 - 2020.02",
+				"description": "Webportál fejlesztése ASP.NET MVC 5 alapon, MS SQL Server adatbázissal, valamint beléptető app karbantartása Angular használatával."
 			},
 			"itron": {
 				"name": "Itron Labs",
-				"title-date": "Gyakornok | 2019.06 - 2019.09",
+				"title": "Gyakornok",
+				"range": "2019.06 - 2019.09",
 				"description": "Platform fejlesztése .NET Core alapon,  Docker és Kubernetes technológiákkal."
 			},
 			"morgan": {
 				"name": "Morgan Stanley Budapest",
-				"title-date": "Gyakornok | 2018.06 - 2019.05",
+				"title": "Gyakornok",
+				"range": "2018.06 - 2019.05",
 				"description": "Webalkalmazások backend fejlesztése C# nyelven, .NET keretrendszeren (WCF). Komponensek fejlesztése, tesztek írása, kódrefaktorálás. Alkalmanként Python és Javascript kódok írása meglévő komponensek kiegészítéseként."
 			},
 			"ottawa": {
 				"name": "Eagle Ottawa Hungary",
-				"title-date": "Diákmunka | 2016.01 - 2016.07",
+				"title": "Diákmunka",
+				"range": "2016.01 - 2016.07",
 				"description": "Minőségibiztonsági jelentések készítése Microsoft Excelben és Wordben, adminisztratív munkák támogatása."
 			}
 		}

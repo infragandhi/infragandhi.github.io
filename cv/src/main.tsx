@@ -4,6 +4,7 @@ import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import './i18n';
+import CV from './components/pdf/cv';
 
 const router = createBrowserRouter([
 	{
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<RouterProvider router={router} />
+		{/* <RouterProvider router={router} /> */}
+		<CV/>
 	</StrictMode>
 );

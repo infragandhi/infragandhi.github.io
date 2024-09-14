@@ -52,7 +52,7 @@ export default {
 				},
 			},
 			screens: {
-				mobile: '320px',
+				mobile: '1px',
 				laptop: '1366px',
 				desktop: '1920px',
 				qhd: '2400px',

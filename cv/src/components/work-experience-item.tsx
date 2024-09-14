@@ -1,3 +1,5 @@
+import SkillBadge from './skillbadge';
+
 interface WorkExperienceItemProps {
 	company: string;
 	status: string;
@@ -5,9 +7,10 @@ interface WorkExperienceItemProps {
 	status2?: string;
 	range2?: string;
 	description: string;
+	skills: string[];
 }
 
-function WorkExperienceItem({ company, status, range, status2, range2, description }: WorkExperienceItemProps) {
+function WorkExperienceItem({ company, status, range, status2, range2, description, skills }: WorkExperienceItemProps) {
 	return (
 		<div>
 			<article className="text-wrap">
@@ -19,6 +22,12 @@ function WorkExperienceItem({ company, status, range, status2, range2, descripti
 				<br />
 				<p className="font-medium mt-2">{description}</p>
 			</article>
+			<br />
+			<div className="flex flex-row gap-x-2">
+				{skills.map(skill => (
+					<SkillBadge skill={skill} />
+				))}
+			</div>
 		</div>
 	);
 }

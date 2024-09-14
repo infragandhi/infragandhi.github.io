@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import en from './translations/en.json';
 import hu from './translations/hu.json';
+import { languageKey } from './keys';
 
 const resources = {
 	en: {
@@ -14,7 +15,7 @@ const resources = {
 
 i18n.use(initReactI18next).init({
 	resources,
-	lng: (localStorage.getItem('nt-cv-language') as string) || 'en',
+	lng: (localStorage.getItem(languageKey) as string) || 'en',
 	fallbackLng: 'en',
 });
 

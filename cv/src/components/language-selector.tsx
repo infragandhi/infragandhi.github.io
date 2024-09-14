@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import i18n from '../i18n';
+import { languageKey } from '@/keys';
 
 function LanguageSelector() {
-	const storageKey = 'nt-cv-language';
-	const [selectedLanguage] = useState<string>(() => (localStorage.getItem(storageKey) as string) || 'en');
+	const [selectedLanguage] = useState<string>(() => (localStorage.getItem(languageKey) as string) || 'en');
 
 	const changeLanguage = (language: string) => {
 		i18n.changeLanguage(language);
-		localStorage.setItem(storageKey, language);
+		localStorage.setItem(languageKey, language);
 	};
 
 	return (

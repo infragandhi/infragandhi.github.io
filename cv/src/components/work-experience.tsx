@@ -1,7 +1,6 @@
 import WorkExperienceItem from './work-experience-item';
 import { useTranslation } from 'react-i18next';
 import { Separator } from '@/components/ui/separator';
-import SkillBadge from './skillbadge';
 
 function WorkExperience() {
 	const [t] = useTranslation();
@@ -14,13 +13,8 @@ function WorkExperience() {
 					status={t('content.work.miradore.title')}
 					range={t('content.work.miradore.range')}
 					description={t('content.work.miradore.description')}
+					skills={['dotnet', 'React', 'Azure']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-4">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="React" />
-					<SkillBadge skill="Azure" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -30,13 +24,8 @@ function WorkExperience() {
 					status={t('content.work.betsson.title')}
 					range={t('content.work.betsson.range')}
 					description={t('content.work.betsson.description')}
+					skills={['dotnet', 'Powershell', 'T-SQL']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-4">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="Powershell" />
-					<SkillBadge skill="T-SQL" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -46,13 +35,8 @@ function WorkExperience() {
 					status={t('content.work.startistica.title')}
 					range={t('content.work.startistica.range')}
 					description={t('content.work.startistica.description')}
+					skills={['dotnet', 'Azure', 'Powershell']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-4">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="Azure" />
-					<SkillBadge skill="Powershell" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -64,14 +48,8 @@ function WorkExperience() {
 					status2={t('content.work.atos.title-2')}
 					range2={t('content.work.atos.range-2')}
 					description={t('content.work.atos.description')}
+					skills={['dotnet', 'AWS', 'Angular', 'T-SQL']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-2">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="AWS" />
-					<SkillBadge skill="Angular" />
-					<SkillBadge skill="SQL" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -81,13 +59,8 @@ function WorkExperience() {
 					status={t('content.work.itron.title')}
 					range={t('content.work.itron.range')}
 					description={t('content.work.itron.description')}
+					skills={['dotnet', 'Azure', 'Angular']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-4">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="Azure" />
-					<SkillBadge skill="Angular" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -97,13 +70,8 @@ function WorkExperience() {
 					status={t('content.work.morgan.title')}
 					range={t('content.work.morgan.range')}
 					description={t('content.work.morgan.description')}
+					skills={['dotnet', 'Python', 'SQL Server']}
 				/>
-				<br />
-				<div className="flex flex-row gap-x-2">
-					<SkillBadge skill="dotnet" />
-					<SkillBadge skill="Python" />
-					<SkillBadge skill="SQL Server" />
-				</div>
 				<br />
 				<Separator className="bg-black dark:bg-white" orientation="horizontal" />
 			</div>
@@ -113,12 +81,9 @@ function WorkExperience() {
 					status={t('content.work.ottawa.title')}
 					range={t('content.work.ottawa.range')}
 					description={t('content.work.ottawa.description')}
+					skills={['MS Excel', 'MS Word']}
 				/>
 				<br />
-				<div className="flex flex-row gap-x-2">
-					<SkillBadge skill="MS Excel" />
-					<SkillBadge skill="MS Word" />
-				</div>
 				<div className="mb-12" />
 			</div>
 		</div>

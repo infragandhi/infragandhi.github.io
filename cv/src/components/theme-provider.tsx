@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import { uiThemeKey } from '@/keys';
 
 type Theme = 'dark' | 'light' | 'system';
 
@@ -20,7 +21,7 @@ const initialState: ThemeProviderState = {
 
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
-export function ThemeProvider({ children, defaultTheme = 'system', storageKey = 'nt-cv-ui-theme', ...props }: ThemeProviderProps) {
+export function ThemeProvider({ children, defaultTheme = 'system', storageKey = uiThemeKey, ...props }: ThemeProviderProps) {
 	const [theme, setTheme] = useState<Theme>(() => (localStorage.getItem(storageKey) as Theme) || defaultTheme);
 
 	useEffect(() => {

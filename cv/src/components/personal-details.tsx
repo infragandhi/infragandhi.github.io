@@ -15,33 +15,33 @@ function PersonalDetails() {
 		return decodeUtf8(bytes);
 	};
 
-	const getMailTo = (): string => {
+	const constructMailTo = (): string => {
 		return `mailto:${decodeString('bnRhbWFzOTUwM0BnbWFpbC5jb20=')}`;
 	};
 
 	return (
-		<div className="grid grid-cols-5 grid-rows-5 gap-y-1">
-			<p className="text-2xl font-bold col-span-5">{decodeString(t('personal-details.name'))}</p>
-			<p className="text-lg font-semibold col-span-5">{t('personal-details.title')}</p>
-			<p className="text-lg font-medium col-span-5">
-				{t('personal-details.country')} 
-			</p>
-			<Link to={getMailTo()}>
-				<Button
-					className="col-start-1 bg-blue-600 dark:bg-blue-600 hover:bg-blue-400 hover:dark:hover:bg-blue-300 cursor-pointer laptop:mt-4 qhd:mt-2"
-					asChild
-					size='icon'>
-					<FontAwesomeIcon icon={faSquareEnvelope} />
-				</Button>
-			</Link>
-			<Link to={decodeString('aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vbmFneXRvbWk=')} target="_blank" rel="noopener noreferrer">
-				<Button
-					className="col-start-2 bg-blue-600 dark:bg-blue-600 hover:bg-blue-400 hover:dark:hover:bg-blue-300 cursor-pointer laptop:mt-4 qhd:mt-2"
-					asChild
-					size="icon">
-					<FontAwesomeIcon icon={faLinkedin} />
-				</Button>
-			</Link>			
+		<div className="grid grid-cols-1 grid-rows-4 gap-y-1 justify-items-center">
+			<p className="text-2xl font-bold">{decodeString(t('personal-details.name'))}</p>
+			<p className="text-lg font-semibold">{t('personal-details.title')}</p>
+			<p className="text-lg font-medium">{t('personal-details.country')}</p>
+			<div className="flew flew-row">
+				<Link to={constructMailTo()} target="_blank" rel="noopener noreferrer">
+					<Button
+						className="bg-blue-600 dark:bg-blue-300 hover:bg-blue-400 hover:dark:hover:bg-blue-600 cursor-pointer mt-2"
+						asChild
+						size="icon">
+						<FontAwesomeIcon icon={faSquareEnvelope} />
+					</Button>
+				</Link>
+				<Link className="ml-8" to={decodeString('aHR0cHM6Ly9saW5rZWRpbi5jb20vaW4vbmFneXRvbWk=')} target="_blank" rel="noopener noreferrer">
+					<Button
+						className="bg-blue-600 dark:bg-blue-300 hover:bg-blue-400 hover:dark:hover:bg-blue-600 cursor-pointer mt-2"
+						asChild
+						size="icon">
+						<FontAwesomeIcon icon={faLinkedin} />
+					</Button>
+				</Link>
+			</div>
 		</div>
 	);
 }

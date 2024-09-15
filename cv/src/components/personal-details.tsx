@@ -1,19 +1,13 @@
 import { Link } from 'react-router-dom';
-import { decode as decode64 } from 'base-64';
-import { decode as decodeUtf8 } from 'utf8';
 import { useTranslation } from 'react-i18next';
 import { Button } from './ui/button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import decodeString from '../utils/decoder';
 
 function PersonalDetails() {
 	const [t] = useTranslation();
-
-	const decodeString = (toDecode: string): string => {
-		const bytes = decode64(toDecode);
-		return decodeUtf8(bytes);
-	};
 
 	const constructMailTo = (): string => {
 		return `mailto:${decodeString('bnRhbWFzOTUwM0BnbWFpbC5jb20=')}`;

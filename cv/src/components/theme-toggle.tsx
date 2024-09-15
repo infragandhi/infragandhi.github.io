@@ -1,13 +1,28 @@
 import { Check, Moon, Sun } from 'lucide-react';
-
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 import { useTheme } from '@/components/theme-provider';
 import { useTranslation } from 'react-i18next';
 
+interface ThemeCheckedProps {
+	themeToCheck: string;
+	label: string;
+}
+
+function ThemeChecked({ themeToCheck, label }: ThemeCheckedProps) {
+	const { theme } = useTheme();
+
+	return (
+		<>
+			{theme === themeToCheck && <Check className="h-4 w-4" />}
+			<div className={theme === theme ? 'ml-2' : ''}>{label}</div>
+		</>
+	);
+}
+
 export function ThemeToggle() {
 	const [t] = useTranslation();
-	const { theme, setTheme } = useTheme();
+	const { setTheme } = useTheme();
 
 	return (
 		<DropdownMenu>
@@ -20,16 +35,13 @@ export function ThemeToggle() {
 			</DropdownMenuTrigger>
 			<DropdownMenuContent align="end">
 				<DropdownMenuItem onClick={() => setTheme('light')}>
-					{theme === 'light' && <Check className="h-4 w-4" />}
-					<div className={theme === 'light' ? 'ml-2' : ''}>{t('theme.light')}</div>
+					<ThemeChecked themeToCheck="light" label={t('theme.light')} />
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme('dark')}>
-					{theme === 'dark' && <Check className="h-4 w-4" />}
-					<div className={theme === 'dark' ? 'ml-2' : ''}>{t('theme.dark')}</div>
+					<ThemeChecked themeToCheck="dark" label={t('theme.dark')} />
 				</DropdownMenuItem>
 				<DropdownMenuItem onClick={() => setTheme('system')}>
-					{theme === 'system' && <Check className="h-4 w-4" />}
-					<div className={theme === 'system' ? 'ml-2' : ''}>{t('theme.system')}</div>
+					<ThemeChecked themeToCheck="system" label={t('theme.system')} />
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
